@@ -5,12 +5,18 @@ This project is mainly released based on WebGL technology and aims to provide us
 ## Keywords
   Human–Computer Interaction,Unity,WebGL,Application,SMS,COS
 
+### I.	Login interface
+The login interface is one of the entrances to the project, which provides the function for users to log in to the system. Users can log in using their registered personal account and password to easily access various functions and services of the project. Ensure only authorized users can access their personal files and information by providing a secure authentication login interface. Users can enter credentials and perform identity verification on the login interface to easily enter the main related file storage service platform.
+
 <p align="center">
   <img src ="https://github.com/30382716ZhiPang/A-Mobile-Application-of-Logic-Education-Based-on-AR/assets/91645493/c9108323-cde7-493f-acb7-ae307758bd51" style="width: 800px"; alt="Sublime's custom"/>
 <p>
 <p align="center">
 Fig. 1.	Login interface
 </p>
+
+### II.	Registration interface
+The registration interface is the entrance to join the user project. Here, new users can fill in the necessary information, such as username, password and other personal information, to create a personal account. Registration interfaces often include verification mechanisms to ensure the accuracy and authority of the information provided. After the user successfully registers, he can log in to the system and start using the file storage service platform. The registration interface is an important part of the user experience. It provides the first step for users to interact with the project.
 
 <p align="center">
   <img src ="https://github.com/30382716ZhiPang/A-Mobile-Application-of-Logic-Education-Based-on-AR/assets/91645493/85404d97-2307-4059-a185-9bdec6c19964" style="width: 800px"; alt="Sublime's custom"/>
@@ -19,7 +25,8 @@ Fig. 1.	Login interface
 Fig. 2.	Registration interface
 </p>
 
-
+### III.	File storage service platform
+The file storage service platform is one of the core features of the project, providing users with the ability to securely store files in the cloud. Users can upload local files to the cloud through the platform and download files to the cloud to local devices when needed. The platform usually provides a browsing user interface that allows users to easily manage and organize their files. At the same time, it also ensures the security and privacy protection of user files. The file storage service platform provides users with a convenient way to store, share and access files, which is very useful for both personal use and team collaboration.
 <p align="center">
   <img src ="https://github.com/30382716ZhiPang/A-Mobile-Application-of-Logic-Education-Based-on-AR/assets/91645493/34126d3c-5bdb-473e-9e86-a40cca924066" style="width: 800px"; alt="Sublime's custom"/>
 <p>
@@ -27,76 +34,26 @@ Fig. 2.	Registration interface
 Fig. 3.	File storage service platform
 </p>
 
-### I.	PROBLEM STATEMENT
-  AR technology is a new technology that integrates the information of real world and virtual world.It uses computer and other science and technology to simulate the physical information that is difficult to experience in a certain time and space range of the real world, applies the virtual information to the real world, and is perceived by the human senses, so as to achieve the sensory experience beyond the reality.Real environment and virtual objects superimposed on the same picture or space in real time. AR system has real-time interaction, and users can interact with the system in many forms, thus creating a strong sense of immersion. AR technology can be widely used in military, medical, construction, education, engineering, film and television, entertainment and other fields.
-  
-With the development of smart phones and tablets, the application of mobile ar becomes more and more extensive. Arfoundation is an arkit XR plug-in（ com.unity.xr . arkit) and arcore XR plug-in（ com.unity.xr . arcore). Although the arkit SDK and arcore SDK are used in the end, the API called by C is slightly different from that of professional platforms (such as arkit plug-in and arcore SDK for unity) due to the re encapsulation of unity. Making full use of arfoundation, combining ar functions (such as plane detection, multi image recognition with interesting real scenes) and creating new ar playing methods (such as portal website and magic box), are highly interactive and interesting.
 
-### II.	OUR NOVELTIES
-#### A.	Based on ARFoundation Technology for Development
-After studying the SDKs that can be used to implement AR function, we choose arfoundation (the development platform after unity encapsulates the third-party native SDKs such as arcore and arkit) so that unity developers can no longer be limited to a certain mobile platform for development, which can ensure that developers only need to develop applications once, and can be deployed to devices of two platforms, There is no need to make any changes.
-This project is developed based on Android mobile terminal. Arfoundation inherits the adaptation of arcore for Android, and has a strong ability to perceive the environment, and can continuously improve the understanding of the real environment by detecting the feature points and the plane in the real scene. This project is based on the function of plane recognition to generate virtual plane objects as interactive scenes.
+## Notice
+The project is mainly released on WebGL, which is a technology used to transmit 3D graphics on web pages. Users can store files in the cloud by registering a personal account. To achieve this feature, you need to use a cloud storage service, such as Amazon S3, Google Cloud Storage, or Microsoft Azure Blob Storage. These services allow you to securely store and manage user-uploaded files.
 
-#### B.	AR technology combined with visual programming
-The project scene is based on the switch between virtual and real environment. The virtual plane generated by AR technology is used as the interactive plane, and the role object is placed on the plane. After adding the condition and all the behaviors, the role will judge the execution according to the conditions The corresponding behavior that holds the behavior code block.
+In addition, the project you mentioned earlier also allows SMS services to be involved. In order to achieve this function, you can use the API of SMS service giants, such as Twilio, Nexmo or Alibaba Cloud SMS Service. With these APIs, you can send SMS verification codes or other notifications to users through Smashing.
 
-This mode of operation is different from the traditional visual programming for children's education. It effectively combines AR technology with traditional visual programming. On the basis of visual programming, it can give real-time feedback of virtual and real environment, increase the interest of user experience, and get rid of the boring stereotype of visual programming.
+To summarize, your project will require the following main components:
 
-### III.	SYSTEM ARCHITECTURE
-The system is divided into three modules: build scene, set parameters and run the program. Players first enter the main interactive interface, identify the plane through the scan plane button, click the select model button to select the character object and place it in the virtual plane, and then click the right scroll bar to select the "condition and behavior" module of the role, and set the conditions to determine the required parameters in the setting parameter button Finally, click the run program button, and the program will start to execute the code logic of all roles.
- 
-<p align="center">
-  <img src ="https://github.com/30382716ZhiPang/AMobileApplicationofLogicEducationBasedonAR/assets/91645493/3d8ef4d4-e098-4c9b-b013-757af878912d"  style="width: 420px"; alt="Sublime's custom"/>
-<p>
+WebGL Application: Technology used to render 3D graphics on web pages.
 
-<p align="center">
-Fig. 2.	System component
-<p>
- 
-### IV.	TECHNICAL HIGHLIGHTS
-In this project, the "code blocks" of conditions and all behaviors make use of task tasks thrown to threads. However, compared with thread pool, tasks require less overhead, and the control of "code blocks" in the project is more accurate and controllable. Each behavior "code block" is executed more than once, which means that the "code block" should be encapsulated and saved in the list by the way of delegation. Then, the unit's update function is used to judge whether there are tasks and continue to execute them. Thus, the thrown sub threads are returned to the unity main thread, and the behaviors in each role "code block" are gradually completed.
-ACKNOWLEDGMENT
+① User registration and authentication: Users can register for a personal account and use that account to log in to your WebGL application.
 
-## Installation
-When running an app integrated with the SDK, you need to ensure that SenseAR or OPPO ARUnit is installed on the device. As above
-As shown in the table, some Xiaomi models and OPPO models have SenseAR or OPPO ARUnit pre-installed. And not
-Pre-installed devices require manual installation of SenseAR. SenseAR is an apk file available on the SenseTime developer website
-Download on. Since the integrated features are constantly updated, for developers who want to experience new features, we recommend using or replacing the pre-installed version
-This upgrade to the latest SenseAR. Specific precautions are as follows:
+② Cloud storage service: used to upload user files to cloud storage and manage these files securely. You can choose to use cloud storage services such as Amazon S3, Google Cloud Storage, Microsoft Azure Blob Storage, etc.
 
-① The name of Xiaomi’s pre-installed version of SenseAR in the application settings is ARServer, and the name of OPPO’s pre-installed version of SenseAR is
-The name is ARUnit. The pre-installed version is relatively old and only contains the SLAM function. If you want to use more features, please update to the new version of SenseAR.
+③ File upload and download: Users can upload local files to the cloud and download files from the cloud to local devices.
 
-② The new version of SenseAR is continuously updated on the SenseTime developer website. After installation, the name of the application list is SenseAR. Use the new version.
-The pre-installed version of SenseAR needs to be uninstalled first. The two cannot coexist, otherwise the application will not run properly.
+④ SMS service: You can use the API of SMS service giants such as Twilio, Nexmo or Alibaba Cloud SMS Service to send SMS verification codes or other notifications to users.
 
-③ In order to use the SenseAR SDK normally, you need to open the permission in SenseAR to allow other applications to start automatically, such as
-As in OPPO mobile phones:
+⑤ By integrating these components together, you can create a WebGL application with user registration, file storage and management, file upload and download, and SMS service functions.
 
-a) Application management->SenseAR->Allow other applications to start automatically,
-
-b) Application Management->SenseAR->Power Consumption Protection->Allow background running. This step can be done after the subsequent SenseAR SDK upgrade.
-to omit.
-
-## Special thanks to Unity Technologies
-<p align="center">
-  <img src ="https://github.com/30382716ZhiPang/AMobileApplicationofLogicEducationBasedonAR/assets/91645493/48ee2c11-6b7d-4485-9b3e-9d26d4ad7db4"  style="width: 420px"; alt="Sublime's custom"/>
-<p>
-  
-<p align="center">
-Fig. 3.	Award certificate
-<p>
-
-This work was supported by the 20th ChinaVR conference and Connected Universal Experiences Laboratories.
-REFERENCES
-
-[1]	Modelling Player Preferences in AR Mobile Games. Vivek R. Warriar ; John R. Woodward ; Laurissa Tokarchuk. 2019 IEEE Conference on Games (CoG).
-
-[2]	AR sightseeing system with proximity detection and markerless AR. Hidetaka Miyajima ; Noriko Yata ; Yoshitsugu Manabe. 2018 International Workshop on Advanced Image Technology (IWAIT).
-
-[3]	An AR Benchmark System for Indoor Planar Object Tracking. Ziming Wu ; Jiabin Guo ; Shuangli Zhang ; Chen Zhao ; Xiaojuan Ma. 2019 IEEE International Conference on Multimedia and Expo (ICME).
-
-[4]	A mobile visual programming system for Android smartphones and tablets. Wolfgang Slany. 2012 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC).
 
 ## Precautions
 The copyright of the project belongs to the team. Secondary development or commercial use is prohibited without explicit authorization. This includes the use and distribution of source code, documentation, graphics, audio and other related materials. Violation of this provision may result in legal consequences. Please be sure to comply with intellectual property laws and related regulations.
