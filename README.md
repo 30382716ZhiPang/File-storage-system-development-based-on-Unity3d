@@ -9,7 +9,7 @@ This project is mainly released based on WebGL technology and aims to provide us
 The login interface is one of the entrances to the project, which provides the function for users to log in to the system. Users can log in using their registered personal account and password to easily access various functions and services of the project. Ensure only authorized users can access their personal files and information by providing a secure authentication login interface. Users can enter credentials and perform identity verification on the login interface to easily enter the main related file storage service platform.
 
 <p align="center">
-  <img src ="https://github.com/30382716ZhiPang/A-Mobile-Application-of-Logic-Education-Based-on-AR/assets/91645493/c9108323-cde7-493f-acb7-ae307758bd51" style="width: 800px"; alt="Sublime's custom"/>
+  <img src ="https://github.com/30382716ZhiPang/A-Mobile-Application-of-Logic-Education-Based-on-AR/assets/91645493/c9108323-cde7-493f-acb7-ae307758bd51" style="width: 700px"; alt="Sublime's custom"/>
 <p>
 <p align="center">
 Fig. 1.	Login interface
@@ -19,7 +19,7 @@ Fig. 1.	Login interface
 The registration interface is the entrance to join the user project. Here, new users can fill in the necessary information, such as username, password and other personal information, to create a personal account. Registration interfaces often include verification mechanisms to ensure the accuracy and authority of the information provided. After the user successfully registers, he can log in to the system and start using the file storage service platform. The registration interface is an important part of the user experience. It provides the first step for users to interact with the project.
 
 <p align="center">
-  <img src ="https://github.com/30382716ZhiPang/A-Mobile-Application-of-Logic-Education-Based-on-AR/assets/91645493/85404d97-2307-4059-a185-9bdec6c19964" style="width: 800px"; alt="Sublime's custom"/>
+  <img src ="https://github.com/30382716ZhiPang/A-Mobile-Application-of-Logic-Education-Based-on-AR/assets/91645493/85404d97-2307-4059-a185-9bdec6c19964" style="width: 700px"; alt="Sublime's custom"/>
 <p>
 <p align="center">
 Fig. 2.	Registration interface
@@ -28,7 +28,7 @@ Fig. 2.	Registration interface
 ### III.	File storage service platform
 The file storage service platform is one of the core features of the project, providing users with the ability to securely store files in the cloud. Users can upload local files to the cloud through the platform and download files to the cloud to local devices when needed. The platform usually provides a browsing user interface that allows users to easily manage and organize their files. At the same time, it also ensures the security and privacy protection of user files. The file storage service platform provides users with a convenient way to store, share and access files, which is very useful for both personal use and team collaboration.
 <p align="center">
-  <img src ="https://github.com/30382716ZhiPang/A-Mobile-Application-of-Logic-Education-Based-on-AR/assets/91645493/34126d3c-5bdb-473e-9e86-a40cca924066" style="width: 800px"; alt="Sublime's custom"/>
+  <img src ="https://github.com/30382716ZhiPang/A-Mobile-Application-of-Logic-Education-Based-on-AR/assets/91645493/34126d3c-5bdb-473e-9e86-a40cca924066" style="width: 700px"; alt="Sublime's custom"/>
 <p>
 <p align="center">
 Fig. 3.	File storage service platform
